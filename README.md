@@ -41,17 +41,35 @@ The application provides separate interfaces for teachers and students, supports
 SnapClass/
 │
 ├── src/
+│   ├── components/
+│   │   ├── dialog_add_photo.py
+│   │   ├── dialog_attendance_results.py
+│   │   ├── dialog_auto_enroll.py
+│   │   ├── dialog_create_subject.py
+│   │   ├── dialog_enroll.py
+│   │   ├── dialog_share_subject.py
+│   │   ├── dialog_voice_attendance.py
+│   │   ├── footer.py
+│   │   ├── header.py
+│   │   └── subject_card.py
+│   │
+│   ├── database/
+│   │   ├── config.py
+│   │   └── db.py
+│   │
+│   ├── pipelines/
+│   │   ├── face_pipeline.py
+│   │   └── voice_pipeline.py
+│   │
 │   ├── screens/
 │   │   ├── home_screen.py
-│   │   ├── teacher_screen.py
-│   │   └── student_screen.py
+│   │   ├── student_screen.py
+│   │   └── teacher_screen.py
 │   │
-│   ├── components/
-│   │   └── dialog_auto_enroll.py
-│   │
-│   └── ...
+│   └── ui/
+│       └── base_layout.py
 │
-├── main.py
+├── app.py
 ├── requirements.txt
 └── README.md
 ```
